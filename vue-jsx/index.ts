@@ -15,7 +15,7 @@ export * from "./types";
 const ssrRegisterHelperId = "/__vue-jsx-ssr-register-helper";
 const ssrRegisterHelperCode =
   `import { useSSRContext } from "vue"\n` +
-  `export const ssrRegisterHelper = ${ssrRegisterHelper.toString()}`;
+  `export ${ssrRegisterHelper.toString()}`;
 
 /**
  * This function is serialized with toString() and evaluated as a virtual
